@@ -1,0 +1,49 @@
+<html>
+<head> 
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8"/>
+    <title>Sourrires Burkinab'Hei | L'association</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/afficher_cacher.js"></script>
+    <link rel="shortcut icon" href="img/logo.ico"> </link>
+</head> 
+<body class="body"> 
+    <header>
+    <div class="bandeau">
+    <a href="Accueil.html"><img id="logo" src="img/logo.gif"></a>
+    <h1>Sourrires Burkinab'Hei</h1>
+    <a href=""><img class="mail" src="img/mail.png"></a>
+    <a href="https://www.facebook.com/profile.php?id=100010262799643&fref=ts"><img id="facebook" src="img/facebook.png">
+    <a href="Log-in.html"><img id="admin" src="img/admin.gif">
+    <a href="Accueil.html" class="sedeco"> Se déconnecter </a>
+    <a href="Photo.html" class="ongletshauts">Photos</a>
+    <a href="Newsletter.html" class="ongletshauts">Newsletter</a>
+    <a href="" class="ongletshauts">Article</a>
+    </div>
+    </header>
+    <div class="BD">
+    <div class="BD2">
+        <h2 class="abonnés">Abonnés : </h2>
+        <p> <input class="checkboxabonnés1" type="checkbox" name="choix1" value="1" >Tout selectionner</p>
+        <p  th:each="abonne : ${abonne}"> <input class="checkboxabonnés2" type="checkbox" name="choix1" value="1" th:text="${abonne.nom}"></p>
+      
+    </div>
+    </div>
+    <aside id="article-association1" class="article">
+            <h2 class="titre">Rédiger une Newsletter :</h2>
+            <section class="section-newsletter1">
+                <div class="div-newsletter1">
+                    <label class="objet">Objet :</label>
+                    <input class="inputobj">
+                </div>
+                <div class="div-newsletter2">
+                <textarea class="areanewsletter"></textarea>
+                <INPUT class="envoyernews" TYPE="submit" NAME="nom" VALUE="Envoyer">
+                </div>
+            </section>
+
+    </aside> 
+   
+
+</body>
+</html>

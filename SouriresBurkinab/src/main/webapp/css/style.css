@@ -1,0 +1,780 @@
+@media screen and (min-width: 900px)
+{
+
+/* Titre */
+h1,.titreP{
+	font-family:"JAWAPALSU";
+	display:inline;
+	margin:auto;
+	position:absolute;
+	top:35%;
+	left:9%;
+	font-size:175%;
+	color:black;
+}
+.BD2{
+	background-color:#845100;
+	margin:6%;
+	border-width:2px;
+	border-style:solid;
+	border-color:black;
+	border-radius:8px;
+	padding:3%;
+	height:85%;
+	overflow-y:auto;
+
+}
+
+.sedeco{
+	float:right;		
+	margin-right:1%;
+	margin-top:3%;
+}
+.bandeau{
+	background-color:#FFCC66;
+	opacity:0.8;
+	border-style:solid;
+	border-color:black;
+	border-radius:16px;
+	border-width:2px;
+	position:relative;
+}
+@font-face {
+  font-family: "FFT";
+  src: url("../font/FFT.ttf");
+}
+@font-face {
+  font-family: "JAWAPALSU";
+  src: url("../font/JAWAPALSU.ttf");
+}
+@font-face {
+  font-family: "Austral";
+  src: url("../font/Austral.ttf");
+}
+#logo{
+	width:6%;
+	padding:1%;
+	padding-left:2%;
+
+}
+.body{
+	display:block;
+	color:black;
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-size:cover;
+	background-image:url(../img/bg4.jpg);
+}
+.BD{
+	padding-top:1%;
+	background-color:#FFCC66;
+	border-style:solid;
+	border-color:black;
+	border-radius:16px;
+	border-width:2px;
+	opacity:0.9;
+	width:19.5%;
+	margin-top:1%;
+	display:inline-block;
+	height:75%;
+	margin-bottom:1%;
+}
+li:hover{
+	background-color:#CC9933;
+	opacity:1;
+}
+
+li{
+	font-family:"Austral";
+	border-radius:8px;
+	background-color:#845100;
+	border-style:solid;
+	border-color:black;
+	border-width:2px;
+	margin:6%;
+	list-style-type:none;
+	margin-right:15%;
+	margin-left:auto;
+	padding:3%;
+	text-align:center;
+	opacity:0.9;
+}
+ul{
+	height:70%;
+}
+span{
+	color:white;
+	cursor:pointer;
+}
+a{
+	text-decoration:none;
+	color:white;
+	cursor:pointer;
+}
+#facebook{
+	position:relative;
+	width:2.1%;
+	left:82%;
+}
+#admin{
+	position:relative;
+	width:2.1%;
+	left:83%;
+}
+#admin:hover{
+	cursor:pointer;
+}
+#mail{
+	width:2.5%;
+	position:relative;
+	left:81%;
+}
+
+.article-accueil1{
+	display:inline-block;
+	background-color:#FFCC66;
+	opacity:0.9;
+	border-width:2px;
+	border-color:black;
+	border-style:solid;
+	border-radius:8px;
+	width:77.8%;
+	float:right;
+	margin-top:1%;
+	margin-left:1%;
+	height:77%;
+	overflow-y:auto;
+}
+
+.article-association1{
+	display:inline-block;
+	background-color:#FFCC66;
+	opacity:0.9;
+	border-style:solid;
+	border-color:black;
+	border-radius:8px;
+	border-width:2px;
+	width:77.8%;
+	float:right;
+	margin-top:1%;
+	margin-left:1%;
+	height:77%;
+	overflow-y:auto;
+}
+
+
+.div-accueil1{
+	position:relative;
+	background-color:#845100;
+	border-style:solid;
+	border-color:black;
+	border-radius:8px;
+	border-width:2px;
+	margin:3%;
+	padding:1%;
+	width:91.5%;
+}
+
+.div-accueil2{
+	width:91.5%;
+	background-color:#845100;
+	margin:3%;
+	margin-top:0%;
+	padding:1%;
+	border-style:solid;
+	border-color:black;
+	border-top:none;
+	border-width:2px;
+	border-bottom-left-radius:8px;
+	border-bottom-right-radius:8px;
+}
+
+}
+@media screen and (max-width: 900px)
+{
+	.body{
+	display:block;
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-size:cover;
+	background-image:url(../img/bg3.bmp);
+}
+	h1{
+	font-family:"JAWAPALSU";
+	display:inline;
+	margin:auto;
+	position:absolute;
+	font-size:90%;
+	left:10%;
+	bottom:15%;
+	display:none;
+	color:black;
+}
+.article-association1{
+	display:inline-block;
+	background-color:#FFCC66;
+	opacity:0.9;
+	border-style:solid;
+	border-color:black;
+	border-radius:8px;
+	border-width:2px;
+	margin-top:1%;
+	margin-left:1%;
+	height:77%;
+	overflow-y:auto;
+}
+#mail{
+	width:2.5%;
+	float:right;
+	margin-top:2%;
+	margin-right:1%;
+}
+.bandeau{
+	background-color:#FFCC66;
+	opacity:0.7;
+	border-style:solid;
+	border-color:black;
+	border-bottom-style:none;
+	border-top-left-radius:16px;
+	border-top-right-radius:16px;
+	border-width:2px;
+	position:relative;	
+	width:100%;
+    text-align:center;
+    top:0;
+    left:0;
+    height:15%;
+    padding:10px 0px 10px 0px;
+    opacity: .7;
+    filter: alpha(opacity=80);
+    zoom: 1;
+    z-index:10;
+}
+#logo{
+	width:8%;
+	position:relative;
+	left:4%;
+}
+#facebook{
+	width:2%;
+	float:right;
+	margin:2%;
+}
+#admin{
+	width:2.5%;
+	float:right;
+	margin-top:1.8%;
+}
+#admin:hover{
+	cursor:pointer;
+}
+@font-face {
+  font-family: "JAWAPALSU";
+  src: url("../font/JAWAPALSU.ttf");
+}
+@font-face {
+  font-family: "Austral";
+  src: url("../font/Austral.ttf");
+}
+header ul {
+	visibility:hidden;
+	margin-left:0%;
+	padding:0%;
+	width:100%;
+	margin-top:0%;
+	opacity:0;
+	transition: visibility 0s, opacity 1s linear;
+}                   
+
+                        
+header ul li:hover{
+    color:white;
+    cursor:pointer;
+    font-weight:bold;
+    text-shadow:0px 0px 7px #FFFFFF;
+	background-color:#FFCC66;
+	opacity:0.8;
+}
+header:hover ul{
+    visibility: visible;
+    opacity: 1;
+}
+
+li{
+	border-bottom:solid 2px;
+	font-family:"Austral";
+	background-color:#FFCC66;
+	border-style:solid;
+	border-color:black;
+	border-top-color:#845100;
+	border-width:2px;
+	list-style-type:none;
+	margin-right:15%;
+	margin-left:auto;
+	text-align:center;
+	opacity:0.8;
+	height:6%;
+	width:100%;
+}
+a{	
+	text-decoration:none;
+	color:white;
+	cursor:pointer;
+}
+.article-accueil1{	
+	display:inline-block;
+	background-color:#FFCC66;
+	opacity:0.9;
+	border-style:solid;
+	border-color:black;
+	border-radius:8px;
+	border-width:2px;
+	height:77%;
+	overflow-y:auto;
+	width:100%;
+}
+.div-accueil2{
+	width:91.5%;
+	background-color:#845100;
+	margin:3%;
+	margin-top:0%;
+	padding:1%;
+	border-style:solid;
+	border-color:black;
+	border-top:none;
+	border-bottom-left-radius:8px;
+	border-bottom-right-radius:8px;
+	border-width:2px;
+}
+.div-accueil1{
+	position:relative;
+	background-color:#845100;
+	border-style:solid;
+	border-color:black;
+	border-radius:8px;
+	border-width:2px;
+	margin:3%;
+	padding:1%;
+	width:91.5%;
+	overflow-y:auto;
+}
+span{
+	color:white;
+	cursor:pointer;
+}
+
+
+
+}
+
+.titre{
+	font-family:"Austral";
+	color:black;
+	font-weight:bold;
+	margin:2%;
+	text-decoration:underline;
+}
+h2{
+	color:white;
+	font-family:"Austral";
+	font-weight:100;
+	font-size:22px;
+}
+.imagemembres{
+	position:relative;
+	left:40%;
+	width:100px;
+	height:100px;
+	border-radius:5px;
+	border-style:solid;
+	border-width:1.5px;
+
+}
+
+.asidemembre{
+	float:right;
+}
+.textemembre{
+	display:inline-block;
+
+}
+.texte{
+	margin:2%;
+	position:relative;
+}
+fieldset{
+	background-color:#FFCC66;
+	opacity:0.8;
+	margin:5%;
+	font-weight:bold;
+	border-width:2px;
+}
+.connexion{
+
+	width: 15%;
+	position:relative;
+	left:35%;
+}
+.identifiant{
+	display:block;
+	float:left;
+	position:relative;
+	left:30%;
+
+}
+.com:hover{
+	cursor:pointer;
+}
+legend{
+    font-weight:bold;
+    text-align:center;
+    margin-bottom:5%;
+}
+.com{
+    margin-top:25px;
+    padding:10px;
+    display:block;
+}
+.id{
+	margin-left:6%;
+}
+.ss{
+	margin:1%;
+}
+
+@font-face {
+  font-family: "CaviarDreams";
+  src: url("../font/CaviarDreams.ttf");
+}
+.body{
+	font-family:"CaviarDreams";
+	color:white;
+}
+.formulaire{
+	margin:5%;
+	margin-left:28%;
+	margin-right:28%;
+}
+/* Article Modif */
+.ongletshauts{
+	background-color:#845100;
+	opacity:0.8;
+	padding:1%;
+	position:relative;
+	float:right;
+	border-radius:5px;
+	margin-right:1%;
+	margin-top:1.8%;
+	display:inline-block;
+	border-style:solid;
+	border-color:black;
+	border-width:2px;
+}
+.modifierassoc{
+	position:relative;
+	top:-2%;
+	right:0.5%;
+	margin:1%;
+	color:blue;
+	text-decoration:underline;
+	font-weight:bold;
+	float:right;
+}
+.modifier{
+	position:relative;
+	top:-2%;
+	right:0.5%;
+	margin:1%;
+	color:blue;
+	text-decoration:underline;
+	font-weight:bold;
+	float:right;
+}
+.supprimer{
+	position:relative;
+	top:-2%;
+	right:0.5%;
+	margin:1%;
+	color:blue;
+	text-decoration:underline;
+	font-weight:bold;
+	float:right;
+}
+.ajouter{
+	color:blue;
+	text-decoration:underline;
+	font-weight:bold;
+	margin:1%;
+}
+.supprimerassoc{
+	color:blue;
+	text-decoration:underline;
+	font-weight:bold;
+	margin:1%;
+	position:absolute;
+	right:0.5%;
+	bottom:75%;
+}
+.liengalerie{
+	color:blue;
+	text-decoration:underline;
+	font-weight:bold;
+	float:right;
+}
+.bouton{
+	color:black;
+}
+/* Newsletter */
+.abonnés{
+	overflow-y:auto;
+}
+.checkboxabonnés1{
+	margin-left:-5%;
+}
+.div-newsletter1{
+	background-color:#845100;
+	position:relative;
+	background-color:#845100;
+	border-style:solid;
+	border-color:black;
+	border-radius:8px;
+	border-width:2px;
+	margin:3%;
+	padding:1%;
+	width:91.5%;
+	margin-bottom:1%;
+	margin-top:1%;
+}
+.div-newsletter2{
+	background-color:#845100;
+	position:relative;
+	background-color:#845100;
+	border-style:solid;
+	border-color:black;
+	border-radius:8px;
+	border-width:2px;
+	margin:3%;
+	margin-top:1%;
+	padding:1%;
+	width:91.5%;
+}
+.areanewsletter{
+	margin-left:10%;
+	width:80%;
+	height:60%;
+}
+.inputobj{
+	margin-left:3.7%;
+	width:80%;
+}
+.envoyernews{
+	position:relative;
+	left:35%;
+	margin-top:1%;
+}
+
+/* Ajouter une photo */
+.aside-photo{
+	display:inline-block;
+	background-color:#FFCC66;
+	opacity:0.9;
+	border-style:solid;
+	border-color:black;
+	border-radius:8px;
+	border-width:2px;
+	width:77.8%;
+	margin-top:1%;
+	height:77%;
+	overflow-y:auto;
+	margin-left:1%;
+}
+
+.section-photo{
+	background-color:#845100;
+	opacity:0.9;
+	border-style:solid;
+	border-color:black;
+	border-radius:8px;
+	border-width:2px;
+	width:77.8%;
+	margin-top:1%;
+	height:77%;
+	overflow-y:auto;
+	margin-left:12%;
+
+}
+
+.ajoutphoto{
+	margin-top:5%;
+	margin-left:10%;
+	display:inline-block;
+}
+.inputphoto{
+	margin-left:8%;
+	color:black;
+}
+.radiophoto{
+	margin-left:23.5%;
+	margin-top:5%;
+}
+
+.selectgalerie{
+	
+	color:black;
+}
+.label-nouvelalbum{
+	margin-left:23.5%;
+
+}
+.div-ajouterphoto{
+	margin-top:5%;
+}
+#newgalery{
+	visibility: hidden;
+}
+.inputgalerie{
+	margin-left:2.3%;
+	width:20.3%;
+	padding:inherit;
+}
+/* Connexion */
+/* Bordered form */
+form {
+    border: 3px solid #f1f1f1;
+}
+
+/* Full-width inputs */
+.input-identifiant[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.publier{
+	display:block;
+	position:relative;
+	left:45%;
+	margin-top:15%;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+/* Avatar image */
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+/* Add padding to containers */
+.container {
+    padding: 16px;
+}
+
+/* The "Forgot password" text */
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+    .cancelbtn {
+        width: 100%;
+    }
+}
+/* Connexion2*/
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+    color:black;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5px auto; /* 15% from the top and centered */
+    border: 1px solid #888;
+    width: 30%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    /* Position it in the top right corner outside of the modal */
+    position: absolute;
+    right: 25px;
+    top: 0; 
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+/* Close button on hover */
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+#descr{
+	width: 30%;
+	height: 10%;
+	margin-top: 1%;
+	display:inline-block;
+	position:absolute;
+	margin-left: 1%;
+
+}

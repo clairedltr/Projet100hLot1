@@ -1,0 +1,66 @@
+<html>
+<head> 
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8"/>
+    <title>Sourrires Burkinab'Hei | L'association</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/afficher_cacher.js"></script>
+    <link rel="shortcut icon" href="img/logo.ico"> </link>
+</head> 
+<body class="body"> 
+	<header th:insert="~{common :: fragbandeau}">
+	</header>
+    <aside class="article-association1">
+            <h2 class="titre">L'association :</h2>
+            <section class="div-accueil1"  id="div1">
+                <h2>Qui sommes-nous ?</h2>
+                <div class="texte" id="texte">
+                    Nous vous présentons l'assoiation en quelques phrases.
+                    Nous vous présentons l'assoiation en quelques phrases.
+                    Nous vous présentons l'assoiation en quelques phrases.
+                    Nous vous présentons l'assoiation en quelques phrases.
+                    Nous vous présentons l'assoiation en quelques phrases.
+                    Nous vous présentons l'assoiation en quelques phrases.
+                    Nous vous présentons l'assoiation en quelques phrases.
+                    Nous vous présentons l'assoiation en quelques phrases.
+                    Nous vous présentons l'assoiation en quelques phrases.
+                    Nous vous présentons l'assoiation en quelques phrases.
+                    Nous vous présentons l'assoiation en quelques phrases.
+                    Nous vous présentons l'assoiation en quelques phrases.
+                    Nous vous présentons l'assoiation en quelques phrases.
+                    Nous vous présentons l'assoiation en quelques phrases.
+                    Nous vous présentons l'assoiation en quelques phrases.
+                    Nous vous présentons l'assoiation en quelques phrases.
+                    Nous vous présentons l'assoiation en quelques phrases.
+                    Nous vous présentons l'assoiation en quelques phrases.
+                    Nous vous présentons l'assoiation en quelques phrases.
+                    Nous vous présentons l'assoiation en quelques phrases.
+                    Nous vous présentons l'assoiation en quelques phrases.
+                    Nous vous présentons l'assoiation en quelques phrases.
+                    Nous vous présentons l'assoiation en quelques phrases.
+                    Nous vous présentons l'assoiation en quelques phrases.
+                    Nous vous présentons l'assoiation en quelques phrases.
+                    Nous vous présentons l'assoiation en quelques phrases.
+                    Nous vous présentons l'assoiation en quelques phrases.
+                    Nous vous présentons l'assoiation en quelques phrases.                    
+                </div>
+            </section>
+            <h2 class="titre">Les membres :</h2>
+            <section class="div-accueil1"  id="div1">
+                <h2>Présentation des membres :</h2>
+                <div class="texte" id="texte" th:each="membre : ${membre}">
+                <img src="img/president.png" class="imagemembres">
+                <h2 th:text="${membre.Nom}"></h2>
+                <p class="textemembre" th:text="${membre.presentation}">Ancien responsable sponsor du Jumping Hei, Anthime est le plus dévoué de tous les gens responsabilisés à HEI. Grace à sa connaissance des chevaux, il est capable de mener au mieu son équipe, afin de les aiguiller dans la recherche active et efficace de sponsors.
+                </p>
+                </div>              
+            </section>        
+    </aside> 
+
+<!-- The Modal -->
+<div id="id01" class="modal" th:insert="~{common :: fragadmin}">
+<!-- The Modal -->
+<div id="id02" class="modal" th:insert="~{common :: fragmail}">
+
+</body>
+</html>

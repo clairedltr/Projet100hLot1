@@ -1,0 +1,84 @@
+<html>
+	<head>
+		<title>Fragments</title> 
+	</head> 
+	<body>
+    <header th:fragment="fragbandeau">
+    <div class="bandeau">
+    <a href="Accueil"><img id="logo" src="img/logo.gif"></a>
+    <h1>Sourrires Burkinab'Hei</h1>
+    <img onclick="document.getElementById('id02').style.display='block'" id="mail" src="img/mail.png">
+    <a href="https://www.facebook.com/profile.php?id=100010262799643&fref=ts"><img id="facebook" src="img/facebook.png"></a>
+    <img onclick="document.getElementById('id01').style.display='block'" id="admin" src="img/admin.gif">
+    </div>
+    <div class="BD">
+    <ul>
+        <li>
+            <a href="Accueil"><div>Accueil</div></a>
+        </li> 
+        <li> 
+            <a href="Association"><div>Association</div></a> 
+        </li> 
+        <li> 
+            <a href="Partenaire"><div>Partenaires</div></a>       
+        </li> 
+        <li> 
+            <a href="Dons"><div>Plateforme de dons</div></a>             
+        </li>
+        <li> 
+            <a href="ProjetsRealise"><div>Projets Réalisés</div></a>
+        </li> 
+        <li> 
+            <a href="Galerie"><div>Galerie</div></a>
+        </li> 
+    </ul>
+    </div>
+    </header>
+    
+    <!-- The Modal -->
+<div th:fragment="fragadmin">
+  <span onclick="document.getElementById('id01').style.display='none'" 
+class="close" title="Close Modal">&times;</span>
+
+  <!-- Modal Content -->
+  <form class="modal-content animate" action="action_page.php">
+    <div class="container">
+      <label><b>Identifiant</b></label>
+      <input class="input-identifiant" type="text" placeholder="Entrer l'identifiant" name="uname" required>
+
+      <label><b>Mot de passe</b></label>
+      <input type="password" placeholder="Entrer le mot de passe" name="psw" required>
+
+      <button type="submit">Se Connecter</button>
+    </div>
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Annuler</button>
+    </div>
+  </form>
+</div>
+
+<!-- The Modal -->
+<div th:fragment="fragmail">
+  <span onclick="document.getElementById('id02').style.display='none'" 
+class="close" title="Close Modal">&times;</span>
+  <!-- Modal Content -->
+  <form class="modal-content2 animate" action="/action_page.php">
+    <div class="container">
+        <h2 class="danslemail">Nous contacter</h2>
+
+      <label><b>Adresse Mail</b></label><br/>
+      <input class="input-identifiant2" type="text" placeholder="Entrer votre adresse mail" name="umail" required><br/>
+      <label><b>Message</b></label><br/>
+      <textarea class="message-mail" type="mail" name="mail" required></textarea>
+
+      <button class="envoyer2" type="submit">Envoyer</button>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Annuler</button>
+    </div>
+  </form>
+</div>
+</body>
+</html>
+

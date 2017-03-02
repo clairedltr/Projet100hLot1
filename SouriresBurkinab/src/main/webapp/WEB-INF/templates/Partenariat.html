@@ -1,0 +1,35 @@
+<html>
+<head> 
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8"/>
+    <title>Sourrires Burkinab'Hei </title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/part.css">
+    <link rel="shortcut icon" href="img/logo.ico"> </link>
+    <script src="js/afficher_cacher.js"></script>
+    <link rel="shortcut icon" href="img/logo.ico"> </link>
+</head> 
+<body class="body"> 
+  	<header th:insert="~{common :: fragbandeau}">
+	</header>
+<div class="partenaires">
+    <h2 class="titre">Partenaires :</h2>
+    <p id="discover"> Découvrez les : </p>
+    <a href="http://www.hei.fr" target="_blank"><img id="hei" src="img/HEI.jpg"/></a>
+  <div id="inscription" class="insc">
+<h2 class="titre"> S'inscrire à la Newsletter </h2>
+<form id="partform"> 
+<input type="text" name="emailForm" size="30" maxlength="30" placeholder="adresse@mail.fr"/>
+<input type="submit" value="Envoyer" class="envoi"/>
+</form>
+</div>
+</div>
+</div>
+
+<!-- The Modal -->
+<div id="id01" class="modal" th:insert="~{common :: fragadmin}">
+<!-- The Modal -->
+<div id="id02" class="modal" th:insert="~{common :: fragmail}">
+
+</body>
+</html>

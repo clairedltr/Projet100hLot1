@@ -1,0 +1,46 @@
+<html>
+<head> 
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8"/>
+    <title>Sourrires Burkinab'Hei | Ajouter Photos</title>
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+    <script src="../../js/ajouterphoto.js"></script>
+    <link rel="shortcut icon" href="../../img/logo.ico"> </link>
+</head> 
+<body class="body"> 
+    <header>
+    <div class="bandeau">
+    <a href="Accueil.html"><img id="logo" src="../../img/logo.gif"></a>
+    <h1>Sourrires Burkinab'Hei</h1>
+    <a href="Accueil.html" class="sedeco"> Se déconnecter </a>
+    <a href="Photo.html" class="ongletshauts">Photos</a>
+    <a href="Newsletter.html" class="ongletshauts">Newsletter</a>
+    <a href="" class="ongletshauts">Article</a>
+    </div>
+    </header>
+    <aside id="aside-photo" class="aside-photo">
+            <h2 class="titre">Ajouter une photo :</h2>
+         <section class="section-photo">
+            <div>
+            <label class="ajoutphoto">Photo : </label>
+            <input class="inputphoto" type="file" name="datafile" size="40">
+            </div>
+            <div >
+            <input class="radiophoto" type="radio" name="choixalbum" value="new" onclick="javascript:afficher('newgalery')" >Nouvelle galerie
+            <input class="radiophoto" type="radio" name="choixalbum" value="old" onclick="javascript:cacher('newgalery')"><select class="selectgalerie" name="choixalbum">
+                <option value="valeur1">Sélectionnez une galerie</option> 
+                <option value="valeur2">Galerie 2016-2017</option>
+                <option value="valeur3">Galerie 2015-2016</option>
+            </select>
+            <div class="div-ajouterphoto" id="newgalery">
+            <label class="label-nouvelalbum">Nom de la nouvelle galerie</label>
+            <input class="inputgalerie" type="text"></div>
+            <input class="publier" type="submit" value="Publier">
+
+            </div>
+        </section>
+    </aside> 
+    
+
+</body>
+</html>

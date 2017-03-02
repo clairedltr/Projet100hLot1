@@ -1,0 +1,93 @@
+<html>
+<head> 
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8"/>
+    <title>Sourrires Burkinab'Hei | L'association</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/afficher_cacher.js"></script>
+    <link rel="shortcut icon" href="img/logo.ico"> </link>
+</head> 
+<body class="body"> 
+    <header>
+    <div class="bandeau">
+    <a href="Accueil.html"><img id="logo" src="img/logo.gif"></a>
+    <h1>Sourrires Burkinab'Hei</h1>
+    <a href="Accueil.html" class="sedeco"> Se déconnecter </a>
+    <a href="" class="ongletshauts">Photos</a>
+    <a href="Newsletter.html" class="ongletshauts">Newsletter</a>
+    </div>
+    <div class="BD">
+    <ul>
+        <li>
+            <a href="AccueilModif.html"><div>Accueil</div></a>
+        </li> 
+        <li> 
+            <a href="AssociationModif.html"><div>Association</div></a> 
+        </li> 
+        <li> 
+            <a href="ProjetsRéalisés.html"><div>Partenaires</div></a>       
+        </li> 
+        <li> 
+            <a href=""><div>Plateforme de dons</div></a>             
+        </li>
+        <li> 
+            <a href=""><div>Projets Réalisés</div></a>
+        </li> 
+        <li> 
+            <a href=""><div>Galerie</div></a>
+        </li> 
+    </ul>
+    </div>
+    </header>
+    <aside id="article-association1" class="article">
+            <h2 class="titre">L'association :</h2>
+            <section class="div-accueil1"  id="div1">
+                <aside href="" class="modifier">Modifier...</aside>
+                <h2>Qui sommes-nous ?</h2>
+                <div class="texte" id="texte">
+                    Nous vous présentons l'assoiation en quelques phrases.
+                    Nous vous présentons l'assoiation en quelques phrases.
+                    Nous vous présentons l'assoiation en quelques phrases.
+                    Nous vous présentons l'assoiation en quelques phrases.
+                    Nous vous présentons l'assoiation en quelques phrases.
+                    Nous vous présentons l'assoiation en quelques phrases.
+                    Nous vous présentons l'assoiation en quelques phrases.
+                    Nous vous présentons l'assoiation en quelques phrases.
+                    Nous vous présentons l'assoiation en quelques phrases.
+                    Nous vous présentons l'assoiation en quelques phrases.
+                    Nous vous présentons l'assoiation en quelques phrases.
+                    Nous vous présentons l'assoiation en quelques phrases.
+                    Nous vous présentons l'assoiation en quelques phrases.
+                    Nous vous présentons l'assoiation en quelques phrases.
+                    Nous vous présentons l'assoiation en quelques phrases.
+                    Nous vous présentons l'assoiation en quelques phrases.
+                    Nous vous présentons l'assoiation en quelques phrases.
+                    Nous vous présentons l'assoiation en quelques phrases.
+                    Nous vous présentons l'assoiation en quelques phrases.
+                    Nous vous présentons l'assoiation en quelques phrases.
+                    Nous vous présentons l'assoiation en quelques phrases.
+                    Nous vous présentons l'assoiation en quelques phrases.
+                    Nous vous présentons l'assoiation en quelques phrases.
+                    Nous vous présentons l'assoiation en quelques phrases.
+                    Nous vous présentons l'assoiation en quelques phrases.
+                    Nous vous présentons l'assoiation en quelques phrases.
+                    Nous vous présentons l'assoiation en quelques phrases.
+                    Nous vous présentons l'assoiation en quelques phrases.                    
+                </div>
+            </section>
+            <h2 class="titre">Les membres :</h2>
+            <section class="div-accueil1"  id="div1">
+                <h2>Présentation des membres :</h2>
+                <div class="texte" id="texte" th:each="membre : ${membre}">
+                <img src="img/president.png" class="imagemembres">
+                <h2 th:text="${membre.Nom}"></h2>
+                <p class="textemembre" th:text="${membre.presentation}">Ancien responsable sponsor du Jumping Hei, Anthime est le plus dévoué de tous les gens responsabilisés à HEI. Grace à sa connaissance des chevaux, il est capable de mener au mieu son équipe, afin de les aiguiller dans la recherche active et efficace de sponsors.
+                </p>
+                </div>              
+            </section>                 
+        <div class="ajouter"> + Ajouter un membre</div>
+        </section>
+    </aside> 
+
+</body>
+</html>

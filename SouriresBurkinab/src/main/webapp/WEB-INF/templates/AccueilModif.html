@@ -1,0 +1,89 @@
+<html>
+<head> 
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8"/>
+    <title>Sourrires Burkinab'Hei | Accueil </title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/afficher_cacher.js"></script>
+    <link rel="shortcut icon" href="img/logo.ico"> </link>
+
+</head> 
+<body class="body"> 
+    <header>
+    <div class="bandeau">
+    <a href="Accueil.html"><img id="logo" src="img/logo.gif"></a>
+    <h1>Sourrires Burkinab'Hei</h1>
+    <a href="Accueil.html" class="sedeco"> Se déconnecter </a>  
+    <a href="" class="ongletshauts">Photos</a>
+    <a href="Newsletter.html" class="ongletshauts">Newsletter</a>
+    </div>
+    <div class="BD">
+    <ul>
+        <li>
+            <a href="AccueilModif.html"><div>Accueil</div></a>
+        </li> 
+        <li> 
+            <a href="AssociationModif.html"><div>Association</div></a> 
+        </li> 
+        <li> 
+            <a href=""><div>Partenaires</div></a>       
+        </li> 
+        <li> 
+            <a href=""><div>Plateformes de dons</div></a>             
+        </li>
+        <li> 
+            <a href=""><div>Projets Réalisés</div></a>
+        </li> 
+        <li> 
+            <a href=""><div>Galerie</div></a>
+        </li> 
+    </ul>
+    </div>
+    </header>
+    <aside class="article-accueil1" id="article">
+        <h2 class="titre">Actualités :</h2>
+        <section class="div-accueil1"  id="div1">
+           <h2>Article 1</h2>
+           <p class="intro">texte introductif de l'article 1</p>
+           <aside href="" ><a class="modifier">Modifier...</a><a class="supprimer"> Supprimer</a></aside>
+           <span class="bouton" id="bouton_texte" onclick="javascript:afficher_cacher('texte');">Afficher le contenu</span>
+           </section>
+           <section class="div-accueil1"  id="div1" th:each="article : ${article}">
+           <h2 th:text="${article.Titre}"></h2>
+           <p class="intro">A REMPLIR UNE FOIS LES COLONNES CHANGEES</p>
+           <span class="bouton" id="bouton_texte" onclick="javascript:afficher_cacher('texte');">Afficher le contenu</span>
+           </section>
+           <section class="div-accueil2" id="div2">
+           <div class="texte" id="texte" th:text="${article.Contenu}">
+                
+            </div>
+        <script type="text/javascript">afficher_cacher('texte');</script>
+        </section>
+        <div class="ajouter"> + Ajouter un article</div>
+    </aside>
+    <!-- The Modal -->
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" 
+class="close" title="Close Modal">&times;</span>
+
+  <!-- Modal Content -->
+  <form class="modal-content animate" action="action_page.php">
+    <div class="container">
+      <label><b>Identifiant</b></label>
+      <input type="text" placeholder="Entrer l'identifiant" name="uname" required>
+
+      <label><b>Mot de passe</b></label>
+      <input type="password" placeholder="Entrer le mot de passe" name="psw" required>
+
+      <button type="submit">Se Connecter</button>
+    </div>
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Annuler</button>
+    </div>
+  </form>
+</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<html>
+<head> 
+    <meta name="viewport" content="width=device-width" />
+     <meta charset="utf-8"/>
+    <title>Sourrires Burkinab'Hei | Accueil </title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/afficher_cacher.js"></script>
+    <link rel="shortcut icon" href="img/logo.ico"> </link>
+</head> 
+<body class="body">
+	<header th:insert="~{common :: fragbandeau}">
+	</header>
+    
+    <aside class="article-accueil1" id="article">
+        <h2 class="titre">Actualités :</h2>
+        <section class="div-accueil1"  id="div1" th:each="article : ${article}">
+           <h2 th:text="${article.Titre}"></h2>
+           <p class="intro">A REMPLIR UNE FOIS LES COLONNES CHANGEES</p>
+           <span class="bouton" id="bouton_texte" onclick="javascript:afficher_cacher('texte');">Afficher le contenu</span>
+           <article class="div-accueil2" id="div2">
+           <div class="texte" id="texte" th:text="${article.Contenu}">
+                
+            </div>
+        <script type="text/javascript">afficher_cacher('texte');</script>
+        </article>
+        </section>
+    </aside> 
+    
+<!-- The Modal -->
+<div id="id01" class="modal" th:insert="~{common :: fragadmin}">
+<!-- The Modal -->
+<div id="id02" class="modal" th:insert="~{common :: fragmail}">
+
+</div>
+</body>
+</html>
